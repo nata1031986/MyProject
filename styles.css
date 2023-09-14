@@ -1,0 +1,20 @@
+.collage {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.collage img {
+    width: calc(50% - 10px);
+    height: calc(50% - 10px);
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.collage img:hover {
+    transform: translateX(-10%) translateY(-10%) scale(1.1);
+}
